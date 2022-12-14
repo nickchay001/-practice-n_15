@@ -1,0 +1,84 @@
+.page__sleeping-arrangements {
+	padding: 100px 0px;
+	background: #FAF8F0;
+
+	@media (max-width: 1024px) {
+		padding: 80px 0px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 50px 0px;
+	}
+
+	@media (max-width:425px) {
+		padding: 40px 0px;
+	}
+}
+
+.sleeping-arrangements {}
+
+.sleeping-arrangements__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sleeping-arrangements__decor {}
+
+.sleeping-arrangements__title {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.sleeping-arrangements__paragraph {
+	margin-top: 12px;
+	max-width: 600px;
+	text-align: center;
+}
+
+.sleeping-arrangements__list {
+	margin-top: 32px;
+	max-width: 1168px;
+	display: flex;
+	column-gap: 72.5px;
+	@media (max-width: 1024px) {
+		column-gap: 30px;
+	}
+	@media (max-width: 800px) {
+		flex-direction: column;
+		&>*:not(:last-child){
+			margin-bottom: 40px;
+		}
+	}
+
+}
+
+.sleeping-arrangements__items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.items-sleeping-arrangements {}
+
+.items-sleeping-arrangements__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.items-sleeping-arrangements__title {
+	margin-top: 12px;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #52503B;
+}
+
+.items-sleeping-arrangements__paragraph {
+	max-width: 346px;
+	font-size: 14px;
+	line-height: 143%;
+	text-align: center;
+	color: #52503B;
+}

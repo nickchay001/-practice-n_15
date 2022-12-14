@@ -1,0 +1,10 @@
+.page__big-image {
+}
+.big-image {
+}
+.big-image__container-big {
+	& img{
+		width: 100%;
+		height: 100%;
+	}
+}

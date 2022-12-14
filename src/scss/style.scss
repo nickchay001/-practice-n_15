@@ -1,0 +1,119 @@
+/*-----RESETS STYLES-------*/
+
+@import "nullstyle.scss";
+
+
+
+/*--------------FONTS----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+/*------------BODY-----------------*/
+
+body {
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+/*------BODY.LOCK FOR BURGER-------*/
+
+body._lock {
+	overflow: hidden;
+}
+
+
+/*-----------WRAPPER--------------*/
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/*--------------CONTAINER----------*/
+
+[class*="__container"] {
+	max-width: 1240px;
+	margin: 0px auto;
+	padding: 0px 20px;
+	position: relative;
+	box-sizing: border-box;
+
+	@media (max-width: 1024px) {
+		padding: 0px 15px;
+	}
+
+	@media (max-width: 768px) {
+		padding: 0px 10px;
+	}
+}
+
+/*------------CONTAINER-BIG--------*/
+
+[class*="__container-big"] {
+	max-width: 1440px;
+	margin: 0px auto;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+
+/*-----------IMPORTS----------------*/
+
+/*-----------HEADER----------------*/
+
+@import "header.scss";
+
+/*-----------MAIN-------------*/
+
+main {
+	flex: 1 1 auto
+}
+
+@import "page__bunner.scss";
+@import "page__description.scss";
+@import "page__big-title.scss";
+@import "page__big-image.scss";
+@import "page__sleeping-arrangements.scss";
+@import "page__we-have.scss";
+@import "page__feedback.scss";
+@import "page__facilities.scss";
+@import "page__booking.scss";
+
+
+/*-----------FOOTER-----------*/
+
+@import "footer.scss";
+
+
+/*----------DEKOR ITEM-----------*/
+.decor{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.decor__item {
+	width: 42px;
+	height: 8px;
+	background: #E08631;
+}
+
+/*----------TITLE-----------*/
+
+.title{
+	font-size: 32px;
+	line-height: 112%;
+	color: #52503B;
+}
+
+/*----------PARAGRAPH-----------*/
+
+.paragraph{
+	font-size: 16px;
+	line-height: 150%;
+	color: #52503B;
+}
